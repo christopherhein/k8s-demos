@@ -1,0 +1,11 @@
+[ℹ]  using region eu-west-1
+[ℹ]  setting availability zones to [eu-west-1c eu-west-1b eu-west-1a]
+[ℹ]  subnets for eu-west-1c - public:192.168.0.0/19 private:192.168.96.0/19
+[ℹ]  subnets for eu-west-1b - public:192.168.32.0/19 private:192.168.128.0/19
+[ℹ]  subnets for eu-west-1a - public:192.168.64.0/19 private:192.168.160.0/19
+[ℹ]  nodegroup "ng-1" will use "ami-08716b70cac884aaa" [AmazonLinux2/1.12]
+[ℹ]  creating EKS cluster "kubecon-demo" in "eu-west-1" region
+[ℹ]  1 nodegroup (ng-1) was included
+[ℹ]  will create a CloudFormation stack for cluster itself and 1 nodegroup stack(s)
+[ℹ]  if you encounter any issues, check CloudFormation console or try 'eksctl utils describe-stacks --region=eu-west-1 --name=kubecon-demo'
+[ℹ]  2 sequential tasks: { create cluster control plane "kubecon-demo", create nodegroup "ng-1" }

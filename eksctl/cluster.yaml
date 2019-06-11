@@ -1,0 +1,9 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: kubecon-demo
+  region: us-west-2
+
+nodeGroups:
+  - name: ng-1
+    desiredCapacity: 2

@@ -1,0 +1,4 @@
+[ℹ]  building nodegroup stack "eksctl-kubecon-demo-nodegroup-ng-1"
+[ℹ]  --nodes-min=2 was set automatically for nodegroup ng-1
+[ℹ]  --nodes-max=2 was set automatically for nodegroup ng-1
+[ℹ]  deploying stack "eksctl-kubecon-demo-nodegroup-ng-1"
