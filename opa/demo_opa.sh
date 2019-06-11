@@ -173,6 +173,8 @@ pe "openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -o
 
 pe "cat admission-controller.yaml"
 
+CADATA=$(cat ca.crt | base64 | tr -d '\n')
+
 pe "cat > webhook-configuration.yaml <<EOF
 kind: ValidatingWebhookConfiguration
 apiVersion: admissionregistration.k8s.io/v1beta1
@@ -191,7 +193,7 @@ webhooks:
         resources:
         - pods
     clientConfig:
-      caBundle: $(cat ca.crt | base64 | tr -d '\n')
+      caBundle: \${CADATA} 
       service:
         namespace: opa
         name: opa
